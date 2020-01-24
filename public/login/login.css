@@ -1,0 +1,57 @@
+/* General stuff */
+
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+
+* {
+    font-family: IBM Plex Sans, sans-serif;
+}
+
+body {
+    background-color: transparent;
+}
+
+:root {
+    --border-color: #0091ff;
+}
+
+/* repl auth */
+
+#repl_auth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 396px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+}
+
+.loginBrowser {
+    width: 246px;
+    
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.loginEmbed {
+    width: 248px;
+
+    border-top: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* repl auth iframe */
+
+iframe {
+    border: none !important;
+    box-shadow: none !important;
+    transform: scale(0.92);
+}

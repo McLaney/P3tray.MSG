@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+
+        <!-- Metadata -->
+
+        <meta charset = "utf-8">
+        <meta name = "description" content = "Integrated global chat for repl.it">
+        <meta name = "viewport" content = "width = device-width">
+
+        <title>repl chat | login</title>
+        <link href = "/public/images/repl-chat.png" rel = "icon"></link>
+        <link href = "/public/login/login.css" rel = "stylesheet"></link>
+
+        <meta property = "og:type" content = "website">
+        <meta property = "og:site_name" content = "repl.it">
+        <meta property = "og:title" content = "repl chat">
+        <meta property = "og:description" content = "Integrated global chat for repl.it">
+        <meta property = "og:image" content = "https://repl-chat.mreconomical.repl.co/public/images/repl-chat.png">
+        
+        <!-- Data and scripts -->
+
+        <script src = "/public/util.js"></script>
+        <script src = "/public/login/login.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Check the navigator -->
+
+        <script>if(window.navigator.userAgent.indexOf("MSIE ")>0||window.navigator.userAgent.indexOf("Trident/")>0||window.navigator.userAgent.indexOf("Edge/")>0){for(;document.body.firstChild;)document.body.removeChild(document.body.firstChild);const e=document.createElement("div");throw e.style.position="absolute",e.style.top="30px",e.style.left="50px",e.style.fontSize="30px",e.innerHTML=new Date+"<br>ERROR: UNSUPPORTED BROWSER",document.body.appendChild(e),"ERROR: UNSUPPORTED BROWSER"}else if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){for(;document.body.firstChild;)document.body.removeChild(document.body.firstChild);const e=document.createElement("div");throw e.style.position="absolute",e.style.top="30px",e.style.left="50px",e.style.fontSize="30px",e.innerHTML=new Date+"<br>ERROR: UNSUPPORTED DEVICE",document.body.appendChild(e),"ERROR: UNSUPPORTED DEVICE"}</script>
+
+        <!-- repl auth -->
+
+        <div id = "repl_auth">
+            <script src = "https://auth.turbio.repl.co/script.js" authed = "auth_request()"></script>
+        </div>
+
+    </body>
+
+</html>

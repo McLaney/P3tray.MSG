@@ -1,0 +1,89 @@
+/* repl chat wrapper */
+
+#repl_chat_wrapper {
+    position: absolute;
+}
+
+/* repl chat button */
+
+#repl_chat_button {
+    position: fixed;
+    bottom: 120px;
+
+    height: 36px;
+    width: 50px;
+
+    outline: none;
+    cursor: pointer;
+    z-index: 334;
+
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #0091ff;
+}
+
+.chatButtonIn {
+    right: 0px;
+
+    opacity: 1;
+
+    transition: all 300ms ease-in 0s;
+}
+
+.chatButtonOut {
+    right: -50px;
+
+    opacity: 0;
+
+    transition: all 300ms ease-out 0s;
+}
+
+#repl_chat_icon {
+    position: relative;
+    top: 2px;
+    
+    height: 20px;
+    width: 20px;
+}
+
+#repl_chat_notification {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+
+    height: 8px;
+    width: 8px;
+
+    border-radius: 4px;
+    background-color: #FF0000;
+}
+
+/* repl chat iframe */
+
+#repl_chat {
+    position: fixed;
+    bottom: 40px;
+
+    height: 400px;
+    width: 250px;
+
+    z-index: 333;
+
+    border: none;
+}
+
+.replChatIn {
+    right: 0px;
+
+    opacity: 1;
+
+    transition: all 300ms ease-in 0s;
+}
+
+.replChatOut {
+    right: -250px;
+
+    opacity: 0;
+
+    transition: all 300ms ease-out 0s;
+}

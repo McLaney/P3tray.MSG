@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+
+#error {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    
+    font-family: Questrial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
