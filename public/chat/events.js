@@ -21,9 +21,9 @@ function chat_listeners() {
         if (event.isTrusted && self !== top) {
             // Close window
             console.log("Close window")
-            parent.postMessage("close", "https://repl.it")
+            parent.postMessage("close", "*")
         } else {
-            console.log("Close window did not happen")
+            console.log("ERROR: Couldn't close window")
         }
     })
 
