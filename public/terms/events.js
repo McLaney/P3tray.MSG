@@ -10,10 +10,6 @@ function chat_listeners() {
     const online_status = document.getElementById("online_status")
     const chat = document.getElementById("chat")
     const online = document.getElementById("online")
-    const back = document.getElementById("back")
-    const messages_wrapper = document.getElementById("messages_wrapper")
-
-    const input = document.getElementById("input")
 
     // Event listeners
 
@@ -69,15 +65,15 @@ function chat_listeners() {
         if (event.isTrusted) {
             // Go to settings page
 
-            location.replace("https://repl-chat.p3tray.repl.co/public/settings/settings.html")
+            location.replace("https://repl-chat.p3tray.repl.co/settings")
         }
     })
 
     terms.addEventListener("click", event => {
         if (event.isTrusted) {
-            // Go to terms and conditions page
+            // Go to settings page
 
-            location.replace("https://repl-chat.p3tray.repl.co/public/terms/terms.html")
+            location.replace("https://repl-chat.p3tray.repl.co/terms")
         }
     })
 
@@ -93,19 +89,6 @@ function chat_listeners() {
                 chat.style.display = "none"
                 online.style.display = "flex"
             }
-        }
-    })
-
-    input.onchange = () => {
-        if (input.value.includes("⼁")) {
-            input.value = input.value.replace("⼁", "")
-        }
-    }
-
-    input.addEventListener("keypress", event => {
-        if (event.isTrusted && event.keyCode == 13 && input.value && input.value.trim()) {
-            Socket.send(`message|${input.value.trim()}`)
-            input.value = ""
         }
     })
 }
