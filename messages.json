@@ -1,24 +1,6 @@
 [
     {
         "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "IDC, consider it a challange."
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "No."
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Thats just more spam"
-    },
-    {
-        "type": "message",
         "from": "axel9967",
         "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
         "content": "i will try"
@@ -298,5 +280,23 @@
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
         "content": "l"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "message",
+        "from": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png",
+        "content": "grog"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
     }
 ]
