@@ -22,4 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("close_chat").style.display = "none"
         document.getElementById("online").classList.add("onlineBrowser")
     }
+
+    // Check session
+
+    if (SessionId) {
+        connect_chat()
+    } else {
+        location.replace("https://repl-chat.p3tray.repl.co/login")
+    }
 })

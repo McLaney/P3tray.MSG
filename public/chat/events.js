@@ -69,7 +69,7 @@ function chat_listeners() {
         if (event.isTrusted) {
             // Go to settings page
 
-            location.replace("https://repl-chat.p3tray.repl.co/public/settings/settings.html")
+            location.replace("https://repl-chat.p3tray.repl.co/settings")
         }
     })
 
@@ -77,7 +77,7 @@ function chat_listeners() {
         if (event.isTrusted) {
             // Go to terms and conditions page
 
-            location.replace("https://repl-chat.p3tray.repl.co/public/terms/terms.html")
+            location.replace("https://repl-chat.p3tray.repl.co/terms")
         }
     })
 

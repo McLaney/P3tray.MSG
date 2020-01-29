@@ -26,6 +26,22 @@ function route(path) {
             }).catch(error => {
                 reject(error)
             })
+        }  else if (path == "/terms") {
+            // Login page
+
+            util.read_file("public/terms/terms.html").then(login => {
+                resolve(["text/html", login])
+            }).catch(error => {
+                reject(error)
+            })
+        } else if (path == "/settings") {
+            // Login page
+
+            util.read_file("public/terms/terms.html").then(login => {
+                resolve(["text/html", login])
+            }).catch(error => {
+                reject(error)
+            })
         }
 
         // Files
