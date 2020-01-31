@@ -37,7 +37,7 @@ function route(path) {
         } else if (path == "/settings") {
             // Login page
 
-            util.read_file("public/terms/terms.html").then(login => {
+            util.read_file("public/settings/settings.html").then(login => {
                 resolve(["text/html", login])
             }).catch(error => {
                 reject(error)

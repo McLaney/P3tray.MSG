@@ -293,8 +293,30 @@ function display_message(data) {
 
 			//}
 		//}
+		if (content.substr(0,2) == "::") {
+			console.log()
+		} else if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
+			const css_content = document.createElement("style")
+			css_content.className = "cssContent"
+			css_content.innerHTML = (content.substr(2,9999999999999))
+			message_content.appendChild(css_content)
+			const text_content = document.createElement("div")
+        	text_content.className = "messageContent"
+    		text_content.innerText = "Has changed some CSS!"
+    		message_content.appendChild(text_content)
 
-		if (content.substr(0,10) == "data:image") {
+		} else if (content.substr(0,2) == ":s" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")){
+			const script_content = document.createElement("script")
+			script_content.className = "scriptContent"
+			script_content.innerHTML = (content.substr(2,9999999999999))
+			message_content.appendChild(script_content)
+			const text_content = document.createElement("div")
+        	text_content.className = "messageContent"
+    		text_content.innerText = "Has changed some JavaScript!"
+    		message_content.appendChild(text_content)
+		}
+
+		else if (content.substr(0,10) == "data:image") {
 
 			// Content (image base64)
 
@@ -307,10 +329,15 @@ function display_message(data) {
 
 			// Content (image link)
 
-			const image_content = document.createElement("img")
-        	image_content.className = "messageContent"
-        	image_content.src = content
-        	message_content.appendChild(image_content)
+			try {
+				const image_content = document.createElement("img")
+        		image_content.className = "messageContent"
+        		image_content.src = content
+        		message_content.appendChild(image_content)
+			} catch {
+				console.log("Image error.")
+				
+			}
 		} else {
 
 			// Content (message)
@@ -337,7 +364,21 @@ function display_message(data) {
         const message = document.createElement("div")
         message.className = "message"
 
-		if (content.substr(0,10) == "data:image") {
+		if (content.substr(0,2) == ":c") {
+
+			//CSS Content
+
+			const css_content = document.createElement("style")
+			css_content.className = "cssContent"
+			css_content.innerHTML = (content.substr(2,9999999999999))
+			message_content.appendChild(css_content)
+			const text_content = document.createElement("div")
+        	text_content.className = "messageContent"
+    		text_content.innerText = "Has changed some universal CSS!"
+    		message_content.appendChild(text_content)
+		}
+
+		else if (content.substr(0,10) == "data:image") {
 
 			//image content
 

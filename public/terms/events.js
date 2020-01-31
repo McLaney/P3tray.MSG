@@ -73,7 +73,7 @@ function chat_listeners() {
         }
     })
 
-    chat-button.addEventListener("click", event => {
+    terms.addEventListener("click", event => {
         if (event.isTrusted) {
             // Go to terms and conditions page
 
