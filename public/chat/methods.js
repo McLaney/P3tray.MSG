@@ -286,16 +286,7 @@ function display_message(data) {
         sender.innerText = from
         message_content.appendChild(sender)
 
-		// Content (image)
-		//if (content.search("http") != -1) {
-			//httploc = content.search("http")
-			//if (content.substr((httploc),(httploc + 4)) == "http") {
-
-			//}
-		//}
-		if (content.substr(0,2) == "::") {
-			console.log()
-		} else if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
+		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
 			css_content.className = "cssContent"
 			css_content.innerHTML = (content.substr(2,9999999999999))
@@ -359,22 +350,30 @@ function display_message(data) {
 
         messages.appendChild(message)
     } else {
+
         // Create message element
 
         const message = document.createElement("div")
         message.className = "message"
 
-		if (content.substr(0,2) == ":c") {
-
-			//CSS Content
-
+		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
 			css_content.className = "cssContent"
 			css_content.innerHTML = (content.substr(2,9999999999999))
 			message_content.appendChild(css_content)
 			const text_content = document.createElement("div")
         	text_content.className = "messageContent"
-    		text_content.innerText = "Has changed some universal CSS!"
+    		text_content.innerText = "Has changed some CSS!"
+    		message_content.appendChild(text_content)
+
+		} else if (content.substr(0,2) == ":s" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")){
+			const script_content = document.createElement("script")
+			script_content.className = "scriptContent"
+			script_content.innerHTML = (content.substr(2,9999999999999))
+			message_content.appendChild(script_content)
+			const text_content = document.createElement("div")
+        	text_content.className = "messageContent"
+    		text_content.innerText = "Has changed some JavaScript!"
     		message_content.appendChild(text_content)
 		}
 
