@@ -54,6 +54,7 @@ function ws_message(message) {
     const type = message.data.substr(0, message.data.indexOf("|"))
     const content = message.data.substr(message.data.indexOf("|") + 1)
 
+
     // Types
 
     if (type == "init") {
@@ -79,7 +80,7 @@ function ws_message(message) {
     } else if (type == "message") {
         // Display message
 
-        display_message(content, time)
+        display_message(content)
 
         // Notification
 
@@ -286,9 +287,6 @@ function display_message(data) {
         sender.className = "firstMessageInfo"
         sender.innerText = from
         message_content.appendChild(sender)
-
-		const time = document.createElement("div")
-		sender.clas
 
 		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
