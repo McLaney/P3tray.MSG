@@ -53,10 +53,6 @@ function ws_message(message) {
 
     const type = message.data.substr(0, message.data.indexOf("|"))
     const content = message.data.substr(message.data.indexOf("|") + 1)
-	var dateFunc = new Date();
-	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-	
 
     // Types
 
