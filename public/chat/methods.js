@@ -53,6 +53,10 @@ function ws_message(message) {
 
     const type = message.data.substr(0, message.data.indexOf("|"))
     const content = message.data.substr(message.data.indexOf("|") + 1)
+	var dateFunc = new Date();
+	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	
 
     // Types
 
@@ -79,7 +83,7 @@ function ws_message(message) {
     } else if (type == "message") {
         // Display message
 
-        display_message(content)
+        display_message(content, time)
 
         // Notification
 
@@ -249,10 +253,10 @@ function display_message(data) {
 
     // Parse data
 
-    data = data.split(config.splitChars[0])
-    const from = data[0]
-    const pfp = data[1]
-    const content = data[2]
+    datasplit = data.split(config.splitChars[0])
+    const from = datasplit[0]
+    const pfp = datasplit[1]
+    const content = datasplit[2]
 
     // Scrolling data
 
@@ -261,7 +265,8 @@ function display_message(data) {
 
     // Display
 
-    if (!PrevMsgSender || PrevMsgSender != from) {
+    if ((!PrevMsgSender || PrevMsgSender != from) || (false)) {
+
         // Create first message element
 
         const message = document.createElement("div")
@@ -286,6 +291,9 @@ function display_message(data) {
         sender.innerText = from
         message_content.appendChild(sender)
 
+		const time = document.createElement("div")
+		sender.clas
+
 		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
 			css_content.className = "cssContent"
@@ -305,16 +313,15 @@ function display_message(data) {
         	text_content.className = "messageContent"
     		text_content.innerText = "Has changed some JavaScript!"
     		message_content.appendChild(text_content)
-		}
+			
+		} else if (content.substr(0,2) == ":i") {
 
-		else if (content.substr(0,10) == "data:image") {
-
-			// Content (image base64)
+			//image content
 
 			const image_content = document.createElement("img")
         	image_content.className = "messageContent"
-        	image_content.src = content
-        	message_content.appendChild(image_content)
+        	image_content.src = content.substr(3,99999)
+        	message.appendChild(image_content)
 
 		} else if (content.substr(0,4) == "http") {
 
@@ -359,41 +366,42 @@ function display_message(data) {
 		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
 			css_content.className = "cssContent"
-			css_content.innerHTML = (content.substr(2,9999999999999))
-			message_content.appendChild(css_content)
+			css_content.innerHTML = (content.substr(2,99999))
+			message.appendChild(css_content)
 			const text_content = document.createElement("div")
         	text_content.className = "messageContent"
     		text_content.innerText = "Has changed some CSS!"
-    		message_content.appendChild(text_content)
+    		message.appendChild(text_content)
 
 		} else if (content.substr(0,2) == ":s" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")){
 			const script_content = document.createElement("script")
 			script_content.className = "scriptContent"
-			script_content.innerHTML = (content.substr(2,9999999999999))
-			message_content.appendChild(script_content)
+			script_content.innerHTML = (content.substr(2,99999))
+			message.appendChild(script_content)
 			const text_content = document.createElement("div")
         	text_content.className = "messageContent"
     		text_content.innerText = "Has changed some JavaScript!"
-    		message_content.appendChild(text_content)
-		}
+    		message.appendChild(text_content)
 
-		else if (content.substr(0,10) == "data:image") {
-
-			//image content
-
-			const image_content = document.createElement("img")
-        	image_content.className = "messageContent"
-        	image_content.src = content
-        	message.appendChild(image_content)
-
-		} else if (content.substr(0,4) == "http") {
+		} else if (content.substr(0,2) == ":i") {
 
 			//image content
 
 			const image_content = document.createElement("img")
         	image_content.className = "messageContent"
-        	image_content.src = content
+        	image_content.src = content.substr(3,99999)
         	message.appendChild(image_content)
+
+		} else if (content.substr(0,2) == ":l" || content.substr(0,2) == ":a") {
+
+			//Link content
+
+			const a_content = document.createElement("a")
+        	a_content.className = "aContent"
+        	a_content.href = content.substr(3,99999)
+			a_content.target = "_blank"
+			a_content.innerText = content.substr(3,99999)
+        	message.appendChild(a_content)
 
 		} else {
 
