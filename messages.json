@@ -1,51 +1,9 @@
 [
     {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "help"
-    },
-    {
         "type": "status",
         "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "user": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg"
     },
     {
         "type": "message",
@@ -57,229 +15,103 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "asd"
+        "content": ":a"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "asd"
+        "content": ":a http://aaa.com:"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "sd"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": ":s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "asd"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "as"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
+        "content": ":a aaaa"
     },
     {
         "type": "status",
         "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "user": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "p3tray"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "you must stop doing not nice stuff"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "or i wil yeet you"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "h"
+        "content": ":a penis.com"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "dirty dog"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "bot"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "hoe"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "no"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "u"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "u"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "dirty"
+    },
+    {
+        "type": "message",
+        "from": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
+        "content": "dog"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "ags18frdi",
+        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg"
     },
     {
         "type": "status",
@@ -297,6 +129,174 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Works?"
+        "content": ":s alert(\"Freddie dieen is now a registered sex offender!\");"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "no-one likes you"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "Directed yo deTITan"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "..."
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "lol"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "lo"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "lol"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "10 hours ago - More than 300 people have died in the outbreak so far, the vast majority from Hubei. More than 14,000 people have been infected"
+    },
+    {
+        "type": "message",
+        "from": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg",
+        "content": "lol"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "axel9967",
+        "pfp": "https://storage.googleapis.com/replit/images/1575983045627_e4b8f24bd47e695dafc7f245bcd7a371.jpeg"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "message",
+        "from": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png",
+        "content": "Freddie dieen is now a registered sex offender!"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "message",
+        "from": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png",
+        "content": "never gonna give you up"
+    },
+    {
+        "type": "message",
+        "from": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png",
+        "content": "never gonna let you down"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "borisgoneson",
+        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "TheGrimReapeer",
+        "pfp": "https://storage.googleapis.com/replit/images/1580134016705_4314f0c0012b6a8cacb69df87359bc3d.png"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "TheGrimReapeer",
+        "pfp": "https://storage.googleapis.com/replit/images/1580134016705_4314f0c0012b6a8cacb69df87359bc3d.png"
     }
 ]

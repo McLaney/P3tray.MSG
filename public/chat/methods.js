@@ -317,19 +317,6 @@ function display_message(data) {
         	image_content.src = content.substr(3,99999)
         	message.appendChild(image_content)
 
-		} else if (content.substr(0,4) == "http") {
-
-			// Content (image link)
-
-			try {
-				const image_content = document.createElement("img")
-        		image_content.className = "messageContent"
-        		image_content.src = content
-        		message_content.appendChild(image_content)
-			} catch {
-				console.log("Image error.")
-				
-			}
 		} else {
 
 			// Content (message)
