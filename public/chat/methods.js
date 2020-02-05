@@ -357,27 +357,44 @@ function display_message(data) {
 
         const message = document.createElement("div")
         message.className = "message"
-
+		/*
 		var cat = content
 
-		var sLoc = content.indexOf("<")
+		var sLoc = cat.indexOf("<")
 
 		var sstr = true
+		
+		while (sstr == false) {
+			if (cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) {
 
-		while (sstr == true) {
+				const css_content = document.createElement("style")
+				css_content.className = "cssContent"
+				css_content.innerHTML = cat.substr((sLoc + 1),((cat.indexOf("c>",(sLoc + 2)))-4))
+				message.appendChild(css_content)
 
-			if (cat.charAt(sLoc + 1) == "i") {
+				var cat = (cat.subtr((cat.substr((sLoc + 1),((cat.indexOf("c>",(sLoc + 2)))-4))), 999999))
+
+			} else if (cat.charAt(sLoc + 1) == "i") {
+
 				const image_content = document.createElement("img")
         		image_content.className = "messageContent"
         		image_content.src = cat.substr((sLoc + 1),((cat.indexOf("i>",(sLoc + 2)))-4))
         		message.appendChild(image_content)
+
+				var cat = (cat.subtr((cat.substr((sLoc + 1),((cat.indexOf("c>",(sLoc + 2)))-4))), 999999))
+
+			} else if (sLoc == -1) {
+        		const message_content = document.createElement("div")
+        		message_content.className = "messageContent"
+        		message_content.innerText = content
+        		message.appendChild(message_content)
+
+				var sstr = false
 			}
 
-
-			var sLoc = cat.indexOf("<", (sLoc + 1))
+			var sLoc = cat.indexOf("<")
 		}
-
-		/*
+		*/		
 
 		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
@@ -421,7 +438,7 @@ function display_message(data) {
         	message.appendChild(message_content)
 		}
 
-		*/
+		
 
         // Check sender
 
