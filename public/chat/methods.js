@@ -1,3 +1,11 @@
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
 function connect_chat() {
     // WebSocket connection
 
@@ -32,7 +40,9 @@ function connect_chat() {
             if (event.reason) {
                 document.body.appendChild(error(event.reason))
             } else {
-                document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED"))
+                document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot. Reconnecting..."))
+				sleep(1000)
+				location.replace("https://repl-chat.p3tray.repl.co")
             }
         }
     }
@@ -44,7 +54,11 @@ function connect_chat() {
             document.body.firstChild.remove()
         }
 
-        document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED"))
+        document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot. Reconnecting..."))
+
+		sleep(3000)
+		location.replace("https://repl-chat.p3tray.repl.co")
+		//setTimeout(sockFail(){ location.replace("https://repl-chat.p3tray.repl.co") }, 3000)
     }
 }
 
@@ -344,6 +358,27 @@ function display_message(data) {
         const message = document.createElement("div")
         message.className = "message"
 
+		var cat = content
+
+		var sLoc = content.indexOf("<")
+
+		var sstr = true
+
+		while (sstr == true) {
+
+			if (cat.charAt(sLoc + 1) == "i") {
+				const image_content = document.createElement("img")
+        		image_content.className = "messageContent"
+        		image_content.src = cat.substr((sLoc + 1),((cat.indexOf("i>",(sLoc + 2)))-4))
+        		message.appendChild(image_content)
+			}
+
+
+			var sLoc = cat.indexOf("<", (sLoc + 1))
+		}
+
+		/*
+
 		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
 			const css_content = document.createElement("style")
 			css_content.className = "cssContent"
@@ -364,14 +399,6 @@ function display_message(data) {
     		text_content.innerText = "Has changed some JavaScript!"
     		message.appendChild(text_content)
 
-		} else if (content.substr(0,2) == ":i") {
-
-			//image content
-
-			const image_content = document.createElement("img")
-        	image_content.className = "messageContent"
-        	image_content.src = content.substr(3,99999)
-        	message.appendChild(image_content)
 
 		} else if (content.substr(0,2) == ":l" || content.substr(0,2) == ":a") {
 
@@ -393,6 +420,8 @@ function display_message(data) {
         	message_content.innerText = content
         	message.appendChild(message_content)
 		}
+
+		*/
 
         // Check sender
 
