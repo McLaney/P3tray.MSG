@@ -1,45 +1,33 @@
 [
     {
         "type": "message",
-        "from": "ags18frdi",
-        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
-        "content": "how to admin??"
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "a"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "no"
+        "content": "a"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": ":i data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAACsCAMAAADlsyHfAAACEFBMVEX///////3///v///n///j//fD//fX+/Pj///b8+/v++/D//u/++d7899f57tr++ev9+OXrvz/13mP14Xj14ZrmxlntylTy2HP777/jvUHtvDX57MXFfw368uHpxD/kynDquTzuzX7frT7bpijQqkTWmzT00lj87afs03frviHy5pverTD89sTnz2PgrVbxyU3v06T357z67JX9/d7x2GP24IP16Kz//+j13ozv0Wvy4Hzy0mP34XXxzknxzTzw2Ib9+tHy5bzkvUzJlQD258rv2Jnhu2Pw4sPbs33t0Z/WnzDJiyHtyoK+gjj35LH21Svgmwb985TttwDbpw7TsCDstDLLpEzYmxXWpwfvxo3lt2jZlx3TljnehwDQmyDPqmPSsIjCdADYo2DStkzHnTnJhADVohrqxZvltUncny3evljWt23lzqq1hhTnpwPWuX/87nTr3tLz2kzuxSDrrzzEpjPClU2ubQDguSP8+7vkvHX9+6jqqTLvyGzezm721pLaybGzhB2/lVu8jza2kE61nmXSolKlilqym3ipgmiypXOXbkrVwoGadCyzm1WkjXqBXlF7UEhvZ31MQnExL3SBZl6ecUFxWGNEP3FZOFt5cHioeB+TioheTWXGr3NxSSq0qY0jI3ZfQlStg06YYhS1kWmqWguJQwCZZkpeXpTRsJZVToepcgC2lEfSkEKiaTBn1yU8AAAgAElEQVR4nO19i3/aVp7vsV2bGPMGSQiMAAFCRmBsIhQEiIfCI4DDJnGxE+MhSY1dWXbimKZ+1azjcZNMp5lJb9tM9042s7u33e7jprP/4pVfie04YzkTUm7Tr/NJCD6Sfjrnd36v8zu/A8Cv+BW/4lf8il/xK37F66C0ln9uEtoevc5/UOt6fm4q2hyaSwZAmzt/bjLaGz0B7rLRG/m5yWhvaAYqV86C0M9NRnvDvBI3xkMx3c9NR1ujmaughtCV7p+bjncNjf8UjT/FHRZLYlTRMmraFOj5/g/D8/LaalYqBkw/dknZWpLaDtbbrnHfpasaWY2HKv2UKBCJ94yTeq5OO2bITy9dk9V64hJJ4J7qJVuLqWozTPDcJQrj1ydltU7Uf5PjHMTt94uTbKM1R61IodWgnNYa/SzVT47cHmw1We2F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 i:"
-    },
-    {
-        "type": "message",
-        "from": "ags18frdi",
-        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg",
-        "content": "how to admin???"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "ags18frdi",
-        "pfp": "https://storage.googleapis.com/replit/images/1580216159733_9bf20d3dae955b2cdb323446abd38ed6.jpeg"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "content": "a"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Not stonks"
+        "content": "a"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<c * {color: blue;} />"
     },
     {
         "type": "status",
@@ -57,91 +45,31 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Stonks"
+        "content": "Sans"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": ":i i:"
+        "content": "Real sans hours"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i i::"
+        "content": "a"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i::"
+        "content": "s"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i i:"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i asd i::"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "sadasdasd"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": ":I"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": ":i"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i:I"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i i::"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i"
+        "content": "d"
     },
     {
         "type": "message",
@@ -153,49 +81,19 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i"
+        "content": "Real"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i i::"
+        "content": "Sans"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "::i https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc.ndtvimg.com%2F2019-03%2Fakfkpmd_rahul-gandhi-pti-650_625x300_17_March_19.jpg&f=1&nofb=1 i::"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "Tron1234",
-        "pfp": "https://storage.googleapis.com/replit/images/1551434195440_92b48e4188942648b0512c40bd175b5a.pn"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "Tron1234",
-        "pfp": "https://storage.googleapis.com/replit/images/1551434195440_92b48e4188942648b0512c40bd175b5a.pn"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "Tron1234",
-        "pfp": "https://storage.googleapis.com/replit/images/1551434195440_92b48e4188942648b0512c40bd175b5a.pn"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "Tron1234",
-        "pfp": "https://storage.googleapis.com/replit/images/1551434195440_92b48e4188942648b0512c40bd175b5a.pn"
+        "content": "Hours"
     },
     {
         "type": "status",
@@ -204,10 +102,16 @@
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
     },
     {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Real sans hours"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<a http://google.com /> Real sans hours"
     },
     {
         "type": "status",
@@ -218,66 +122,6 @@
     {
         "type": "status",
         "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "jamiekylemac16",
-        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "jamiekylemac16",
-        "pfp": "https://repl.it/public/images/evalbot/evalbot_33.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "disconnect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
         "user": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
     },
@@ -291,12 +135,168 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Woohoo"
+        "content": "<d />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Hello"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Sans"
     },
     {
         "type": "status",
         "statusType": "connect",
         "user": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d /> Death to isreal intensifies."
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "owo"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d /> Death to isreal intensifies."
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<a http://sans.com /> Real sans hours"
+    },
+    {
+        "type": "status",
+        "statusType": "disconnect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "a"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "asd"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<a http />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<i asdasdasda />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<s />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<c />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<c /> Weasdjkhdsa"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<i /> ajkshdkjasa"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<d /> Yes"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Current list of bugs:                          1) AAAAAAAAAAa"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "2) Text overlaps with titles"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "3) Death to isreal"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<br> no existe"
     }
 ]

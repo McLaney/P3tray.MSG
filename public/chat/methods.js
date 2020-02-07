@@ -40,7 +40,7 @@ function connect_chat() {
             if (event.reason) {
                 document.body.appendChild(error(event.reason))
             } else {
-                document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot. Reconnecting..."))
+                document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot for a new update. Reconnecting..."))
 				sleep(1000)
 				location.replace("https://repl-chat.p3tray.repl.co")
             }
@@ -54,11 +54,10 @@ function connect_chat() {
             document.body.firstChild.remove()
         }
 
-        document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot. Reconnecting..."))
+        document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a crash. Reconnecting..."))
 
 		sleep(3000)
 		location.replace("https://repl-chat.p3tray.repl.co")
-		//setTimeout(sockFail(){ location.replace("https://repl-chat.p3tray.repl.co") }, 3000)
     }
 }
 
@@ -295,51 +294,86 @@ function display_message(data) {
         const message_content = document.createElement("div")
         message.appendChild(message_content)
 
-        // Sender
+		var cat = content
 
-        const sender = document.createElement("div")
-        sender.className = "firstMessageInfo"
-        sender.innerText = from
-        message_content.appendChild(sender)
+		var sLoc = cat.indexOf("<")
 
-		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
-			const css_content = document.createElement("style")
-			css_content.className = "cssContent"
-			css_content.innerHTML = (content.substr(2,9999999999999))
-			message_content.appendChild(css_content)
-			const text_content = document.createElement("div")
-        	text_content.className = "messageContent"
-    		text_content.innerText = "Has changed some CSS!"
-    		message_content.appendChild(text_content)
+		var sstr = true
 
-		} else if (content.substr(0,2) == ":s" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")){
-			const script_content = document.createElement("script")
-			script_content.className = "scriptContent"
-			script_content.innerHTML = (content.substr(2,9999999999999))
-			message_content.appendChild(script_content)
-			const text_content = document.createElement("div")
-        	text_content.className = "messageContent"
-    		text_content.innerText = "Has changed some JavaScript!"
-    		message_content.appendChild(text_content)
-			
-		} else if (content.substr(0,2) == ":i") {
+		// Search for different message types. E.G. Image or Hyperlink.
+		
+		if (sLoc != -1) {
+			while (sLoc != -1) {
 
-			//image content
+				// CSS
 
-			const image_content = document.createElement("img")
-        	image_content.className = "messageContent"
-        	image_content.src = content.substr(3,99999)
-        	message.appendChild(image_content)
+				if ((cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) && (cat.indexOf("/>",(sLoc + 1))) != -1) {
 
-		} else {
+					const css_content = document.createElement("style")
+					css_content.className = "cssContent"
+					css_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+					message_content.appendChild(css_content)
 
-			// Content (message)
-					
-        	const text_content = document.createElement("div")
-        	text_content.className = "messageContent"
-    		text_content.innerText = content
-    		message_content.appendChild(text_content)
+				// Image
 
+				} else if ((cat.charAt(sLoc + 1) == "i") && (cat.indexOf("/>",(sLoc + 1))) != -1) {
+
+					const image_content = document.createElement("img")
+					image_content.className = "messageContent"
+					image_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
+					message_content.appendChild(image_content)
+
+				// JavaScript
+
+				} else if ((cat.charAt(sLoc + 1) == "s" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+					const script_content = document.createElement("script")
+					script_content.className = "scriptContent"
+					script_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+					message_content.appendChild(script_content)
+
+				// Hyperlink
+
+				} else if ((cat.charAt(sLoc + 1) == "a" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+				
+					const a_content = document.createElement("a")
+    				a_content.className = "aContent"
+ 				   	a_content.href = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
+					a_content.target = "_blank"
+					a_content.innerText = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
+    		    	message_content.appendChild(a_content)
+
+				// Sans admin command.
+				
+				} else if ((cat.charAt(sLoc + 1) == "d" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+
+					// Create styles for the chat.
+					const css_content = document.createElement("style")
+					css_content.className = "cssContent"
+					css_content.innerHTML = ('* { color: blue; font-family: "Comic sans MS"; }')
+					message_content.appendChild(css_content)
+
+					// Create the sans image.
+					const image_content = document.createElement("img")
+					image_content.className = "messageContent"
+					image_content.src = "/public/images/deathtoisreal.jpeg"
+					message_content.appendChild(image_content)
+				}
+
+				var eLoc = cat.indexOf("/>",(sLoc + 1))
+				var sLoc = cat.indexOf("<", eLoc)
+
+				if (sLoc == -1) {
+					const message_content = document.createElement("div")
+					message_content.className = "messageContent"
+					message_content.innerText = cat.substr((eLoc + 2), 999999)
+					message_content.appendChild(message_content)
+				}
+			}
+		} else if (sLoc == -1) {
+			const message_text_content = document.createElement("div")
+			message_text_content.className = "messageContent"
+			message_text_content.innerText = content
+			message_content.appendChild(message_text_content)
 		}
 
         // Check sender
@@ -357,88 +391,88 @@ function display_message(data) {
 
         const message = document.createElement("div")
         message.className = "message"
-		/*
+		
 		var cat = content
 
 		var sLoc = cat.indexOf("<")
 
 		var sstr = true
+
+		// Search for different message types. E.G. Image or Hyperlink.
 		
-		while (sstr == false) {
-			if (cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) {
+		if (sLoc != -1) {
+			while (sLoc != -1) {
 
-				const css_content = document.createElement("style")
-				css_content.className = "cssContent"
-				css_content.innerHTML = cat.substr((sLoc + 1),((cat.indexOf("c>",(sLoc + 2)))-4))
-				message.appendChild(css_content)
+				// CSS
 
-				var cat = (cat.subtr((cat.substr((sLoc + 1),((cat.indexOf("c>",(sLoc + 2)))-4))), 999999))
+				if ((cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) && (cat.indexOf("/>",(sLoc + 1))) != -1) {
 
-			} else if (cat.charAt(sLoc + 1) == "i") {
+					const css_content = document.createElement("style")
+					css_content.className = "cssContent"
+					css_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+					message.appendChild(css_content)
 
-				const image_content = document.createElement("img")
-        		image_content.className = "messageContent"
-        		image_content.src = cat.substr((sLoc + 1),((cat.indexOf("i>",(sLoc + 2)))-4))
-        		message.appendChild(image_content)
+				// Image
 
-				var cat = (cat.subtr((cat.substr((sLoc + 1),((cat.indexOf("c>",(sLoc + 2)))-4))), 999999))
+				} else if ((cat.charAt(sLoc + 1) == "i") && (cat.indexOf("/>",(sLoc + 1))) != -1) {
 
-			} else if (sLoc == -1) {
-        		const message_content = document.createElement("div")
-        		message_content.className = "messageContent"
-        		message_content.innerText = content
-        		message.appendChild(message_content)
+					const image_content = document.createElement("img")
+					image_content.className = "messageContent"
+					image_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+					message.appendChild(image_content)
 
-				var sstr = false
+				// JavaScript
+
+				} else if ((cat.charAt(sLoc + 1) == "s" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+					const script_content = document.createElement("script")
+					script_content.className = "scriptContent"
+					script_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+					message.appendChild(script_content)
+
+				// Hyperlink
+
+				} else if ((cat.charAt(sLoc + 1) == "a" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+				
+					const a_content = document.createElement("a")
+    				a_content.className = "aContent"
+ 				   	a_content.href = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+					a_content.target = "_blank"
+					a_content.innerText = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+    		    	message.appendChild(a_content)
+
+				// Sans admin command.
+				
+				} else if ((cat.charAt(sLoc + 1) == "d" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+
+					// Create styles for the chat.
+					const css_content = document.createElement("style")
+					css_content.className = "cssContent"
+					css_content.innerHTML = ('* { color: blue; font-family: "Comic sans MS"; }')
+					message.appendChild(css_content)
+
+					// Create the sans image.
+					const image_content = document.createElement("img")
+					image_content.className = "messageContent"
+					image_content.src = "/public/images/deathtoisreal.jpeg"
+					message.appendChild(image_content)
+				}
+
+				var eLoc = cat.indexOf("/>",(sLoc + 1))
+				var sLoc = cat.indexOf("<", eLoc)
+
+				if (sLoc == -1) {
+					const message_content = document.createElement("div")
+					message_content.className = "messageContent"
+					message_content.innerText = cat.substr((eLoc + 2), 999999)
+					message.appendChild(message_content)
+				}
 			}
-
-			var sLoc = cat.indexOf("<")
+		} else if (sLoc == -1) {
+			const message_content = document.createElement("div")
+			message_content.className = "messageContent"
+			message_content.innerText = content
+			message.appendChild(message_content)
 		}
-		*/		
-
-		if (content.substr(0,2) == ":c" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")) {
-			const css_content = document.createElement("style")
-			css_content.className = "cssContent"
-			css_content.innerHTML = (content.substr(2,99999))
-			message.appendChild(css_content)
-			const text_content = document.createElement("div")
-        	text_content.className = "messageContent"
-    		text_content.innerText = "Has changed some CSS!"
-    		message.appendChild(text_content)
-
-		} else if (content.substr(0,2) == ":s" && (from == "P3tray" || from == "Mow Toes" || from == "Tron1234")){
-			const script_content = document.createElement("script")
-			script_content.className = "scriptContent"
-			script_content.innerHTML = (content.substr(2,99999))
-			message.appendChild(script_content)
-			const text_content = document.createElement("div")
-        	text_content.className = "messageContent"
-    		text_content.innerText = "Has changed some JavaScript!"
-    		message.appendChild(text_content)
-
-
-		} else if (content.substr(0,2) == ":l" || content.substr(0,2) == ":a") {
-
-			//Link content
-
-			const a_content = document.createElement("a")
-        	a_content.className = "aContent"
-        	a_content.href = content.substr(3,99999)
-			a_content.target = "_blank"
-			a_content.innerText = content.substr(3,99999)
-        	message.appendChild(a_content)
-
-		} else {
-
-        	// Message content
-
-        	const message_content = document.createElement("div")
-        	message_content.className = "messageContent"
-        	message_content.innerText = content
-        	message.appendChild(message_content)
-		}
-
-		
 
         // Check sender
 
