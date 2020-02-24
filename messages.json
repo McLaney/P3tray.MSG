@@ -1,37 +1,61 @@
 [
     {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
+        "type": "status",
+        "statusType": "connect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<c * {color: blue;} />"
+        "content": "Hello world"
     },
     {
         "type": "status",
-        "statusType": "disconnect",
+        "statusType": "connect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "E..."
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<m https://vle.mathswatch.co.uk/resources/ping.mp3 />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Welp"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Computé machin bronk"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<m   https://vle.mathswatch.co.uk/resources/ping.mp3   />"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
+        "user": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+    },
+    {
+        "type": "status",
+        "statusType": "connect",
         "user": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
     },
@@ -45,31 +69,55 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Sans"
+        "content": "EEEEEEEe"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Real sans hours"
+        "content": "Ok"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
+        "content": "It works for now"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "s"
+        "content": "<m https://vle.mathswatch.co.uk/resources/ping.mp3 />"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "d"
+        "content": "<m  https://ceatcloud-my.sharepoint.com/personal/ags-15pema_ashgreenschool_org_uk/Documents/Public/Music/P3tray.MP3/Floral Shoppe.mp3  />"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "^ Floral shoppe, full song."
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Enjoy"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "Use m tags"
+    },
+    {
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<m"
     },
     {
         "type": "message",
@@ -81,43 +129,37 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Real"
+        "content": "<"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Sans"
+        "content": ">"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Hours"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "content": "m>"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Real sans hours"
+        "content": "/>"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<a http://google.com /> Real sans hours"
+        "content": "<m https://ceatcloud-my.sharepoint.com/personal/ags-15pema_ashgreenschool_org_uk/Documents/Public/Music/P3tray.MP3/Floral Shoppe.mp3 /> Floral shoppe."
     },
     {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "type": "message",
+        "from": "P3tray",
+        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
+        "content": "<m  https://ceatcloud-my.sharepoint.com/personal/ags-15pema_ashgreenschool_org_uk/Documents/Public/Music/P3tray.MP3/Krab Borg Remix Compilation (320  kbps).mp3  /> Crab Borg"
     },
     {
         "type": "status",
@@ -135,168 +177,36 @@
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d />"
+        "content": "Weewoo"
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d />"
+        "content": "Y'all should come online lmao."
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Hello"
+        "content": "We now have video and music support."
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Sans"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
+        "content": "But don't use the video one yet, because you will corrupt your own user profile, making the chat unusable for yourself."
     },
     {
         "type": "message",
         "from": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d /> Death to isreal intensifies."
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "owo"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d /> Death to isreal intensifies."
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<a http://sans.com /> Real sans hours"
+        "content": "And i am the only Super User (Owner Admin) that can fix it."
     },
     {
         "type": "status",
         "statusType": "disconnect",
         "user": "P3tray",
         "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "status",
-        "statusType": "connect",
-        "user": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "a"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "asd"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<a http />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<i asdasdasda />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<s />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<c />"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<c /> Weasdjkhdsa"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<i /> ajkshdkjasa"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<d /> Yes"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "Current list of bugs:                          1) AAAAAAAAAAa"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "2) Text overlaps with titles"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "3) Death to isreal"
-    },
-    {
-        "type": "message",
-        "from": "P3tray",
-        "pfp": "https://storage.googleapis.com/replit/images/1562921004839_ec0a988ca699776c9e3589722cfa19df.png",
-        "content": "<br> no existe"
     }
 ]

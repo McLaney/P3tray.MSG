@@ -432,3 +432,12 @@ body {
 .name {
     margin-left: 8px;
 }
+
+.audioContent {
+	width: 160px;
+	height: 50px;
+}
+
+.videoContent {
+	width: 160px;;
+}

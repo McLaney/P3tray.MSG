@@ -1,7 +1,7 @@
 const config = {
     port: 8080,
     origins: ["https://repl.it", "https://repl-chat.p3tray.repl.co", "https://repl-chat--p3tray.repl.co"],
-    reqByteLimit: 100000,
+    reqByteLimit: 1080,
 
     splitChars: ["⼁", "¦"],
 
