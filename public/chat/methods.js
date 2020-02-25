@@ -42,7 +42,7 @@ function connect_chat() {
             } else {
                 document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot for a new update. Reconnecting..."))
 				sleep(1000)
-				location.replace("https://repl-chat.p3tray.repl.co")
+				//location.replace("https://repl-chat.p3tray.repl.co")
             }
         }
     }
@@ -107,7 +107,7 @@ function notify() {
     }
 }
 
-function appendMessage(cat, message, messages, from){
+function scanMessage(cat, from){
 
 	var sLoc = cat.indexOf("<")
 
@@ -224,16 +224,11 @@ function appendMessage(cat, message, messages, from){
 		message.appendChild(message_content)
 	}
 
-	// Check sender
-
-    if (from == Username) {
+	if (from == Username) {
         message.classList.add("selfMessage")
     }
 
-    // Add to messages
-
-    messages.appendChild(message)
-
+	return (message)
 }
 
 function init(data) {
@@ -423,7 +418,7 @@ function display_message(data) {
         const message_content = document.createElement("div")
         message.appendChild(message_content)
 
-        // Sender
+		// Sender
 
         const sender = document.createElement("div")
         sender.className = "firstMessageInfo"
@@ -432,7 +427,11 @@ function display_message(data) {
 
 		// Variables used in the different message types loop:
 
-		appendMessage(content, message_content, messages, from)
+		scannedMessage = scanMessage(content, from)
+
+    	// Add to messages
+
+    	messages.appendChild(scannedMessage)
 
     } else {
 
@@ -441,7 +440,11 @@ function display_message(data) {
         const message = document.createElement("div")
         message.className = "message"
 
-		appendMessage(content, message, messages, from)
+		scannedMessage = scanMessage(content, from)
+
+    	// Add to messages
+
+    	messages.appendChild(scannedMessage)
     }
 
     // Set as previous message sender
