@@ -107,6 +107,135 @@ function notify() {
     }
 }
 
+function appendMessage(cat, message, messages, from){
+
+	var sLoc = cat.indexOf("<")
+
+	var sstr = true
+
+	// Search for different message types. E.G. Image or Hyperlink.
+	
+	if (sLoc != -1) {
+		while (sLoc != -1) {
+
+			// CSS
+
+			if ((cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) && (cat.indexOf("/>",(sLoc + 1))) != -1) {
+
+				const css_content = document.createElement("style")
+				css_content.className = "cssContent"
+				css_content.innerHTML = cat.substr((sLoc + 1),((cat.indexOf("/>",(sLoc + 2)))-2))
+				message.appendChild(css_content)
+
+			// Image
+
+			} else if ((cat.charAt(sLoc + 1) == "i") && (cat.indexOf("/>",(sLoc + 1))) != -1) {
+
+				const image_content = document.createElement("img")
+				image_content.className = "messageContent"
+				image_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
+				message.appendChild(image_content)
+
+			// JavaScript
+
+			} else if ((cat.charAt(sLoc + 1) == "s" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+				const script_content = document.createElement("script")
+				script_content.className = "scriptContent"
+				script_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
+				message.appendChild(script_content)
+
+			// Hyperlink
+
+			} else if ((cat.charAt(sLoc + 1) == "a" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+			
+				const a_content = document.createElement("a")
+				a_content.className = "aContent"
+				a_content.href = cat.substr((sLoc + 1),((cat.indexOf("/>",(sLoc + 1)))-2))
+				a_content.target = "_blank"
+				a_content.innerText = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
+				message.appendChild(a_content)
+
+			// Video Element
+
+			} else if ((cat.charAt(sLoc + 1) == "v" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+				const video_content = document.createElement("video")
+				video_content.className = "videoContent"
+				video_content.controls = "true"
+				video_content.autoplay = "true"
+				video_content.src = "https://ceatcloud-my.sharepoint.com/personal/ags-15pema_ashgreenschool_org_uk/Documents/Public/Videos/P3tray.MP4/Music%20Videos/shrekit.mp4" //cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
+				video_content.type = "video/mp4"
+				message.appendChild(video_content)
+
+			// Music element
+
+			} else if ((cat.charAt(sLoc + 1) == "m" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+				const audio_content = document.createElement("audio")
+				audio_content.className = "audioContent"
+				audio_content.controls = "true"
+				audio_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2)) //"/public/images/s.ogv"
+				audio_content.type = "audio/ogg"
+				message.appendChild(audio_content)
+
+			// Sans admin command.
+			
+			} else if ((cat.charAt(sLoc + 1) == "d" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+
+				// Create styles for the chat.
+				const css_content = document.createElement("style")
+				css_content.className = "cssContent"
+				css_content.innerHTML = ('* { color: blue; font-family: "Comic sans MS"; }')
+				message.appendChild(css_content)
+
+				// Create the sans image.
+				const image_content = document.createElement("img")
+				image_content.className = "messageContent"
+				image_content.src = "/public/images/deathtoisreal.jpeg"
+				message.appendChild(image_content)
+			
+			// Fix the styles back to normal
+
+			} else if ((cat.charAt(sLoc + 1) == "f" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
+
+				// Create styles for the chat.
+				const css_content = document.createElement("style")
+				css_content.className = "cssContent"
+				css_content.innerHTML = ('* { color: black; font-family: "Arial"; }')
+				message.appendChild(css_content)
+			}
+
+			var eLoc = cat.indexOf("/>",(sLoc + 1))
+			if (eLoc != -1) {
+				var sLoc = cat.indexOf("<", eLoc)
+			} else {
+				var sLoc = -1
+			}
+
+			if (sLoc == -1) {
+				const message_content = document.createElement("div")
+				message_content.className = "messageContent"
+				message_content.innerText = cat.substr((eLoc + 2), 999999)
+				message.appendChild(message_content)
+			}
+		}
+	} else if (sLoc == -1) {
+		const message_content = document.createElement("div")
+		message_content.className = "messageContent"
+		message_content.innerText = cat
+		message.appendChild(message_content)
+	}
+
+	// Check sender
+
+    if (from == Username) {
+        message.classList.add("selfMessage")
+    }
+
+    // Add to messages
+
+    messages.appendChild(message)
+
+}
+
 function init(data) {
     // Parse data
 
@@ -303,253 +432,16 @@ function display_message(data) {
 
 		// Variables used in the different message types loop:
 
-		var cat = content
+		appendMessage(content, message_content, messages, from)
 
-		var sLoc = cat.indexOf("<")
-
-		var sstr = true
-
-		// Search for different message types. E.G. Image or Hyperlink.
-		
-		if (sLoc != -1) {
-			while (sLoc != -1) {
-
-				// CSS
-
-				if ((cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) && (cat.indexOf("/>",(sLoc + 1))) != -1) {
-
-					const css_content = document.createElement("style")
-					css_content.className = "cssContent"
-					css_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
-					message_content.appendChild(css_content)
-
-				// Image
-
-				} else if ((cat.charAt(sLoc + 1) == "i") && (cat.indexOf("/>",(sLoc + 1))) != -1) {
-
-					const image_content = document.createElement("img")
-					image_content.className = "messageContent"
-					image_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
-					message_content.appendChild(image_content)
-
-				// JavaScript
-
-				} else if ((cat.charAt(sLoc + 1) == "s" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-					const script_content = document.createElement("script")
-					script_content.className = "scriptContent"
-					script_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
-					message_content.appendChild(script_content)
-
-				// Hyperlink
-
-				} else if ((cat.charAt(sLoc + 1) == "a" && ((cat.indexOf("/>",(sLoc + 1))) != -1))){
-				
-					const a_content = document.createElement("a")
-    				a_content.className = "aContent"
- 				   	a_content.href = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
-					a_content.target = "_blank"
-					a_content.innerText = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
-    		    	message_content.appendChild(a_content)
-
-				// Music element
-
-				} else if ((cat.charAt(sLoc + 1) == "m" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-					const audio_content = document.createElement("audio")
-					audio_content.className = "audioContent"
-					audio_content.controls = "true"
-					audio_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
-					audio_content.type = "audio/ogg"
-					message_content.appendChild(audio_content)
-
-				// Sans admin command.
-				
-				} else if ((cat.charAt(sLoc + 1) == "d" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-
-					// Create styles for the chat.
-					const css_content = document.createElement("style")
-					css_content.className = "cssContent"
-					css_content.innerHTML = ('* { color: blue; font-family: "Comic sans MS"; }')
-					message_content.appendChild(css_content)
-
-					// Create the sans image.
-					const image_content = document.createElement("img")
-					image_content.className = "messageContent"
-					image_content.src = "/public/images/deathtoisreal.jpeg"
-					message_content.appendChild(image_content)
-
-				// Fix the CSS
-
-				}  else if ((cat.charAt(sLoc + 1) == "f" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-
-					// Create styles for the chat.
-					const css_content = document.createElement("style")
-					css_content.className = "cssContent"
-					css_content.innerHTML = ('* { color: black; font-family: "Arial"; }')
-					message_content.appendChild(css_content)
-				}
-				var eLoc = cat.indexOf("/>",(sLoc + 1))
-				if (eLoc != -1) {
-					var sLoc = cat.indexOf("<", eLoc)
-				} else {
-					var sLoc = -1
-				}
-
-				if (sLoc == -1) {
-					const text_content = document.createElement("div")
-					text_content.className = "messageContent"
-					text_content.innerText = cat.substr((eLoc + 2), 999999)
-					message_content.appendChild(text_content)
-				}
-			}
-		} else if (sLoc == -1) {
-        	const text_content = document.createElement("div")
-   	 	    text_content.className = "messageContent"
-     	    text_content.innerText = content
-   		    message_content.appendChild(text_content)
-		}
-
-        // Check sender
-
-        if (from == Username) {
-            message.classList.add("selfMessage")
-        }
-
-        // Add to messages
-
-        messages.appendChild(message)
     } else {
 
         // Create message element
 
         const message = document.createElement("div")
         message.className = "message"
-		
-		var cat = content
 
-		var sLoc = cat.indexOf("<")
-
-		var sstr = true
-
-		// Search for different message types. E.G. Image or Hyperlink.
-		
-		if (sLoc != -1) {
-			while (sLoc != -1) {
-
-				// CSS
-
-				if ((cat.charAt(sLoc + 1) == "c" && (from == "P3tray" || from == "Tron1234")) && (cat.indexOf("/>",(sLoc + 1))) != -1) {
-
-					const css_content = document.createElement("style")
-					css_content.className = "cssContent"
-					css_content.innerHTML = cat.substr((sLoc + 1),((cat.indexOf("/>",(sLoc + 2)))-2))
-					message.appendChild(css_content)
-
-				// Image
-
-				} else if ((cat.charAt(sLoc + 1) == "i") && (cat.indexOf("/>",(sLoc + 1))) != -1) {
-
-					const image_content = document.createElement("img")
-					image_content.className = "messageContent"
-					image_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
-					message.appendChild(image_content)
-
-				// JavaScript
-
-				} else if ((cat.charAt(sLoc + 1) == "s" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-					const script_content = document.createElement("script")
-					script_content.className = "scriptContent"
-					script_content.innerHTML = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
-					message.appendChild(script_content)
-
-				// Hyperlink
-
-				} else if ((cat.charAt(sLoc + 1) == "a" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-				
-					const a_content = document.createElement("a")
-    				a_content.className = "aContent"
- 				   	a_content.href = cat.substr((sLoc + 1),((cat.indexOf("/>",(sLoc + 1)))-2))
-					a_content.target = "_blank"
-					a_content.innerText = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2))
-    		    	message.appendChild(a_content)
-
-				// Video Element
-
-				} else if ((cat.charAt(sLoc + 1) == "v" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-					const video_content = document.createElement("video")
-					video_content.className = "videoContent"
-					video_content.controls = "true"
-					video_content.autoplay = "true"
-					video_content.src = "https://ceatcloud-my.sharepoint.com/personal/ags-15pema_ashgreenschool_org_uk/Documents/Public/Videos/P3tray.MP4/Music%20Videos/shrekit.mp4" //cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-4))
-					video_content.type = "video/mp4"
-					message.appendChild(video_content)
-
-				// Music element
-
-				} else if ((cat.charAt(sLoc + 1) == "m" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-					const audio_content = document.createElement("audio")
-					audio_content.className = "audioContent"
-					audio_content.controls = "true"
-					audio_content.src = cat.substr((sLoc + 2),((cat.indexOf("/>",(sLoc + 1)))-2)) //"/public/images/s.ogv"
-					audio_content.type = "audio/ogg"
-					message.appendChild(audio_content)
-
-				// Sans admin command.
-				
-				} else if ((cat.charAt(sLoc + 1) == "d" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-
-					// Create styles for the chat.
-					const css_content = document.createElement("style")
-					css_content.className = "cssContent"
-					css_content.innerHTML = ('* { color: blue; font-family: "Comic sans MS"; }')
-					message.appendChild(css_content)
-
-					// Create the sans image.
-					const image_content = document.createElement("img")
-					image_content.className = "messageContent"
-					image_content.src = "/public/images/deathtoisreal.jpeg"
-					message.appendChild(image_content)
-				
-				// Fix the styles back to normal
-
-				} else if ((cat.charAt(sLoc + 1) == "f" && (from == "P3tray" || from == "Tron1234")) && ((cat.indexOf("/>",(sLoc + 1))) != -1)){
-
-					// Create styles for the chat.
-					const css_content = document.createElement("style")
-					css_content.className = "cssContent"
-					css_content.innerHTML = ('* { color: black; font-family: "Arial"; }')
-					message.appendChild(css_content)
-				}
-
-				var eLoc = cat.indexOf("/>",(sLoc + 1))
-				if (eLoc != -1) {
-					var sLoc = cat.indexOf("<", eLoc)
-				} else {
-					var sLoc = -1
-				}
-
-				if (sLoc == -1) {
-					const message_content = document.createElement("div")
-					message_content.className = "messageContent"
-					message_content.innerText = cat.substr((eLoc + 2), 999999)
-					message.appendChild(message_content)
-				}
-			}
-		} else if (sLoc == -1) {
-			const message_content = document.createElement("div")
-			message_content.className = "messageContent"
-			message_content.innerText = content
-			message.appendChild(message_content)
-		}
-
-        // Check sender
-
-        if (from == Username) {
-            message.classList.add("selfMessage")
-        }
-
-        // Add to messages
-
-        messages.appendChild(message)
+		appendMessage(content, message, messages, from)
     }
 
     // Set as previous message sender
