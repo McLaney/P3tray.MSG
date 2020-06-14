@@ -10,6 +10,7 @@ function connect_chat() {
     // WebSocket connection
 
     Socket = new WebSocket(`wss://repl-chat.p3tray.repl.co?sessionId=${SessionId}`, config.wsProtocol)
+	console.log('Socket connection (Cryptic password):', Socket, 'Do not share this with anyone!')
 
     // WebSocket events
 
@@ -42,7 +43,7 @@ function connect_chat() {
             } else {
                 document.body.appendChild(error("ERROR: WEBSOCKET CONNECTION FAILED, probably a reboot for a new update. Reconnecting..."))
 				sleep(1000)
-				location.replace("https://repl-chat.p3tray.repl.co")
+				//location.replace("https://repl-chat.p3tray.repl.co")
             }
         }
     }
